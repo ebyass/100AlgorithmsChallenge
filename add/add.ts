@@ -9,7 +9,7 @@ function add2(...param1: number[]): number {
 	})
 
 	return total
-// }
+}
 // console.log(add(1, 2));
 // console.log(add(3, 2));
 
