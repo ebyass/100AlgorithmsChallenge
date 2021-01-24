@@ -1,5 +1,6 @@
 export function alphabeticShift(inputString: string): string {
 // const alphabet: string[]= [ 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z' ]
+//* USING AN OBJECT WITH KEY VALUE PAIRS IS A LOT BETTER THAN ITERATING THROUGH AN ARRAY OF 25 ITEMS EACH TIME 
 const alphabet = {
 	'a':'b', 'b':'c', 'c':'d',
 	'd':'e', 'e':'f', 'f':'g',
@@ -17,7 +18,7 @@ for(let i=0; i<strArr.length; i++){
 	strArr[i] = alphabet[strArr[i]]
 }
 
-return strArr.join('') 
+return strArr.join('')  
 }
 
 console.log(alphabeticShift('crazy'));
