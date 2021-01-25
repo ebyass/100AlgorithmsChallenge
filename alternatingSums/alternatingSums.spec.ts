@@ -1,6 +1,6 @@
 import { alternatingSums } from './alternatingSums';
 
-describe(alternatingSums.name, () => {
+xdescribe(alternatingSums.name, () => {
     it('Test 1', () => {
         // arrange
         const data = [50, 60, 60, 45, 70];

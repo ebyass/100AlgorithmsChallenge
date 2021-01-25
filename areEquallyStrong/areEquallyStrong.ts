@@ -1,5 +1,10 @@
 export function areEquallyStrong(yourLeft: number, yourRight: number, friendsLeft: number, friendsRight: number): boolean {
+	const yourWeakest = yourLeft <= yourRight ? yourLeft : yourRight
+	const yourSrongest = yourLeft >= yourRight ? yourLeft : yourRight
+	const friendsWeakest = friendsLeft <= friendsRight ? friendsLeft : friendsRight
+	const friendsStrongest = friendsLeft >= friendsRight ? friendsLeft : friendsRight
 
+	return yourSrongest === friendsStrongest && yourWeakest === friendsWeakest
 }
 
 // console.log(areEquallyStrong(10, 15, 15, 10))
